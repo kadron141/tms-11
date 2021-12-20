@@ -17,8 +17,16 @@ h1, h2, h3, span, p, li {
 
 .header-wrapper {
     display: flex;
+    align-items: center;
+    padding: 20px 150px;
+    background-color: $secondary-bg;
 
     .logo-wrapper {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
         span {
             font-weight: 700;
             font-size: 30px;
@@ -27,14 +35,20 @@ h1, h2, h3, span, p, li {
     }
 
     .nav-wrapper {
+        margin-left: auto;
+        margin-right: 25px;
+
         .nav-list {
             display: flex;
+            gap: 30px;
+            margin-right: 25px;
 
             li {
                 list-style-type: none;
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 28px;
+                cursor: pointer;
 
                 &:first-child {
                     font-weight: 600;
@@ -42,12 +56,29 @@ h1, h2, h3, span, p, li {
             }
         }
     }
+
+    .button-primary {
+        &.transparent {
+            margin-right: 25px;
+        }
+    }
 }
 
 .button-primary {
+    background: $primary-bg;
+    border-radius: 4px;
+    width: 110px;
+    height: 43px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: $secondary-text;
+    cursor: pointer;
 
-}
-
-.button-secondary {
-
+    &.transparent {
+        border: 1px solid $primary-border;
+        color: $primary-text;
+        background: transparent;
+    }
 }
