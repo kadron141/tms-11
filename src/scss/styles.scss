@@ -19,7 +19,6 @@ h1, h2, h3, span, p, li {
     display: flex;
     align-items: center;
     padding: 20px 150px;
-    background-color: $secondary-bg;
 
     .logo-wrapper {
         cursor: pointer;
@@ -81,4 +80,34 @@ h1, h2, h3, span, p, li {
         color: $primary-text;
         background: transparent;
     }
+}
+
+.main-wrapper {
+    height: calc(100vh - 83px);
+
+    .main-info-wrapper {
+
+        .main-title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 60px;
+        }
+    }
+}
+
+.product-wrapper {
+    height: 100vh;
+}
+
+.text-default {
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.link {
+    color: $primary-bg;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
 }
