@@ -40,7 +40,7 @@ h1, h2, h3, span, p, li {
         .nav-list {
             display: flex;
             gap: 30px;
-            margin-right: 25px;
+            margin-right: 4px;
 
             li {
                 list-style-type: none;
@@ -84,13 +84,39 @@ h1, h2, h3, span, p, li {
 
 .main-wrapper {
     height: calc(100vh - 83px);
+    display: flex;
+    padding: 0 150px;
+    justify-content: space-between;
 
     .main-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 440px;
 
         .main-title {
             font-weight: 700;
             font-size: 40px;
             line-height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .text-default {
+            margin-bottom: 56px;
+        }
+
+        .main-actions {
+            .button-primary {
+                margin-right: 30px;
+                width: 175px;
+                height: 53px;
+            }
+        }
+    }
+
+    .main-img-wrapper {
+        img {
+            transform: translate(0, 25%);
         }
     }
 }
