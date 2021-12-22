@@ -276,11 +276,48 @@ h1, h2, h3, span, p, li {
         .title-tertiary {
             margin-bottom: 10px;
         }
+
+        .bullet-wrapper {
+            display: flex;
+            gap: 30px;
+
+            .bullet-point {
+                min-width: 35px;
+                max-width: 35px;
+                height: 35px;
+                border-radius: 14px;
+                background-color: $orange-bg;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &::after {
+                    content: '';
+                    width: 8px;
+                    height: 16px;
+                    border: solid white;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate( 45deg);
+                }
+
+                &.red {
+                    background-color: $red-bg;
+                }
+
+                &.blue {
+                    background-color: $blue-bg;
+                }
+            }
+        }
     }
 
     .privileges-img-wrapper {
         img {
             transform: translate(0, 50%);
+
+            &.collab-img {
+                transform: translate(0, 65%);
+            }
         }
     }
 }
