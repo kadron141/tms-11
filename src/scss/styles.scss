@@ -162,6 +162,11 @@ h1, h2, h3, span, p, li {
     font-weight: 600;
     font-size: 22;
     line-height: 33px;
+
+    &.small {
+        font-size: 16px;
+        line-height: 26px;
+    }
 }
 
 .product-wrapper {
@@ -238,6 +243,44 @@ h1, h2, h3, span, p, li {
     }
 }
 
-.management-wrapper {
+.subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.privileges-wrapper {
     height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+
+    .privileges-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 440px;
+
+        .text-default {
+            margin-bottom: 30px;
+        }
+
+        .title-secondary {
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            margin-bottom: 8px;
+        }
+
+        .title-tertiary {
+            margin-bottom: 10px;
+        }
+    }
+
+    .privileges-img-wrapper {
+        img {
+            transform: translate(0, 50%);
+        }
+    }
 }
