@@ -186,6 +186,7 @@ h1, h2, h3, span, p, li {
         width: 175px;
         height: 53px;
         align-self: center;
+        text-transform: uppercase;
     }
     
     .product-features-container {
@@ -320,4 +321,32 @@ h1, h2, h3, span, p, li {
             }
         }
     }
+}
+
+.experts {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #EDEDED 0.35%, rgba(255, 255, 255, 0.0001) 99.63%);
+    padding: 50px 150px 0;
+    border-radius: 50% 50% 0% 0%/50% 50% 0% 0%;
+
+    .title-secondary, .text-default {
+        text-align: center;
+    }
+
+    .title-secondary {
+        margin-bottom: 15px;
+    }
+
+
+    .button-primary {
+        width: 216px;
+        height: 53px;
+        align-self: center;
+    }
+}
+
+.strategies {
+    height: 100vh;
 }
