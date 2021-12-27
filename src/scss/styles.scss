@@ -15,23 +15,23 @@ h1, h2, h3, span, p, li {
     color: $primary-text;
 }
 
+.logo-wrapper {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    span {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 28px;
+    }
+}
+
 .header-wrapper {
     display: flex;
     align-items: center;
     padding: 20px 150px;
-
-    .logo-wrapper {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 15px;
-
-        span {
-            font-weight: 700;
-            font-size: 30px;
-            line-height: 28px;
-        }
-    }
 
     .nav-wrapper {
         margin-left: auto;
@@ -633,6 +633,32 @@ h1, h2, h3, span, p, li {
                 color: $primary-bg;
                 width: 150px;
                 height: 50px;
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 0 150px;
+    height: 30vh;
+
+    .socials {
+        .social-icons-wrapper {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+
+            .social-icon {
+                width: 40px;
+                height: 40px;
+                background-color: $lightgreen-bg;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                color: $primary-bg;
+                cursor: pointer;
             }
         }
     }
