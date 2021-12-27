@@ -551,3 +551,59 @@ h1, h2, h3, span, p, li {
         }
     }
 }
+
+.reviews {
+    height: 75vh;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        margin-bottom: 8px;
+    }
+
+    >.text-default {
+        text-align: center;
+    }
+
+    .gray {
+        color: $darkgray-text;
+        margin: 16px 0;
+    }
+
+    .reviews-container {
+        display: flex;
+        gap: 65px;
+        margin-top: 50px;
+
+        .review-wrapper {
+            border: 1px solid $primary-border;
+            border-radius: 5px;    
+            width: 330px;
+            padding: 26px;
+
+            .review-person {
+                display: flex;
+                gap: 14px;
+                align-items: center;
+
+                .person-name {
+                    display: flex;
+                    flex-direction: column;
+        
+                    a {
+                        text-decoration: none;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 600;
+                        color: $primary-bg;
+                        cursor: pointer;
+                    }
+                }
+            }
+        
+        }
+    }
+}
+
